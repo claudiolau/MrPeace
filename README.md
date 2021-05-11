@@ -39,3 +39,9 @@ To activate SHEBANG.
 ```bash
 chmod +x *.py
 ```
+
+# Editable
+
+```
+pip3 install --editable .
+```
