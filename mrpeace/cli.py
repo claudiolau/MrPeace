@@ -1,17 +1,24 @@
 #!/usr/bin/env python3
 
-import os
-import logging
-from commands import hello
-from commands import mail
+import click
+from .commands import Welcome, Mail
+from mrpeace import info
 
 
+@click.group()
+@click.version_option(version=info.VERSION)
 def cli():
-    logging.basicConfig(filename="app.log", level=logging.INFO)
-    logging.info("Started")
-    hello()
-    mail()
+    pass
 
 
-if __name__ == "__main__":
-    cli()
+@cli.command()
+def hi():
+    click.secho(Welcome().hello(), bg="blue")
+
+
+@cli.command()
+@click.option("--account", prompt="Your account", help="Provide your account")
+@click.option("-password", prompt="Your password", help="Provide your password")
+def automail(account, password):
+    click.confirm("Do you want to continue?", abort=True)
+    Mail(account, password).send()

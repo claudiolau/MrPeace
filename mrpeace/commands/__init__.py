@@ -1,4 +1,2 @@
-#!/usr/bin/env python3
-
-from .hello import hello
-from .mail import mail
+from .welcome import Welcome
+from .mail import Mail

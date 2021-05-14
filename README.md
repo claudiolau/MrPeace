@@ -45,3 +45,14 @@ chmod +x *.py
 ```
 pip3 install --editable .
 ```
+
+# Bash
+
+```bash
+pip3 install setuptools twine
+pip3 install setup.py sdist
+```
+
+```
+twine upload dist/*
+```
