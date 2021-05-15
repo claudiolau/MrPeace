@@ -6,53 +6,31 @@ It aims to make the process of writing command line tools quick and fun while al
 
 <img width="50%" height="50%" src='https://i.giphy.com/media/jUwpNzg9IcyrK/giphy.webp'/>
 
-# Virutal Environment
+# App Permissions
 
-```bash
-python3 -m venv venv
-```
-
-```bash
-source venv/bin/activate
-```
-
-```bash
-deactivate
-```
-
-# Dependencies Package
-
-```bash
-pip3 freeze> requirements.txt
-```
+To allow SMTP to send emails on your behalf start by enabling less secure apps to access your account. For detailed instructions on how to do this, you should check out this <a href ='https://support.google.com/accounts/answer/6010255'>page</a>.
 
 # Installation
 
 ```bash
-pip3 install -r requirements.txt
+pip3 install mrpeace
 ```
 
-# Remark
+# Commands
 
-To activate SHEBANG.
+To access help options.
 
 ```bash
-chmod +x *.py
+mrpeace --help
 ```
 
-# Editable
-
-```
-pip3 install --editable .
-```
-
-# Bash
+To prompt user to send default email message. Ideal to use gmail in any case.
 
 ```bash
-pip3 install setuptools twine
-pip3 install setup.py sdist
+mrpeace automail
 ```
 
-```
-twine upload dist/*
-```
+# Help and Support
+
+- Documentation: https://pypi.org/project/mrpeace/
+- Dependencies: https://click.palletsprojects.com/en/8.0.x/

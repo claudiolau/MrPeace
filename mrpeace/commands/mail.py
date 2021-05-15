@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import smtplib
-import click
 
 
 class Mail:

@@ -13,6 +13,7 @@ def cli():
 
 @cli.command()
 def hi():
+    """Print welcome message."""
     click.secho(Welcome().hello(), bg="blue")
 
 
@@ -20,5 +21,6 @@ def hi():
 @click.option("--account", prompt="Your account", help="Provide your account")
 @click.option("-password", prompt="Your password", help="Provide your password")
 def automail(account, password):
+    """Send default email to self."""
     click.confirm("Do you want to continue?", abort=True)
     Mail(account, password).send()
