@@ -34,7 +34,7 @@ Commands:
   url       Send request and checks response body
 ```
 
-To prompt user to send default email message. Ideal to use gmail in any case.
+To prompt user to send default email message. Gmail is preferred and tested.
 
 ```bash
 mrpeace automail
