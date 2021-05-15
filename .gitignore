@@ -2,5 +2,5 @@
 dist/
 venv/
 mrpeace.egg-info/
-mrpeace/__pycache__/
-
+mrpeace/__pycache__
+mrpeace/commands/__pycache__
