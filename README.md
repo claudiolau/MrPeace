@@ -34,19 +34,19 @@ Commands:
   url       Send request and checks response body
 ```
 
-① To prompt user to send default email message. Ideal to use gmail in any case.
+To prompt user to send default email message. Ideal to use gmail in any case.
 
 ```bash
 mrpeace automail
 ```
 
-② To print a welcome message.
+To print a welcome message.
 
 ```bash
 mrpeace hi
 ```
 
-② To prompt user to enter url path & check the response object of specified url.
+To prompt user to enter url path & check the response object of specified url.
 
 ```bash
 mrpeace url
