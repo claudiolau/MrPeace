@@ -9,7 +9,10 @@ class Mail:
         self.password = password
 
     def send(self):
-        server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-        server.login(self.account, self.password)
-        server.sendmail(self.account, self.account, "this message is from python")
-        server.quit()
+        try:
+            server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
+            server.login(self.account, self.password)
+            server.sendmail(self.account, self.account, "this message is from python")
+            server.quit()
+        except:
+            raise smtplib.SMTPAuthenticationError("Invalid Account")

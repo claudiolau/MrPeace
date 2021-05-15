@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
+
 import click
-from .commands import Welcome, Mail
+from .commands import Welcome, Mail, CheckAuth
 from mrpeace import info
 
 
@@ -24,3 +25,11 @@ def automail(account, password):
     """Send default email to self."""
     click.confirm("Do you want to continue?", abort=True)
     Mail(account, password).send()
+
+
+@cli.command()
+@click.option("-check", prompt="entire url link", help="Provide url path")
+def url(check):
+    """Send request and checks response body"""
+    click.confirm("Enter url path", abort=True)
+    click.echo(CheckAuth(check).json())
