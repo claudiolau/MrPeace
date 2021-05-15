@@ -20,6 +20,7 @@ jobs:
       - run:
           name: Running tests
           command: |
+          . venv/bin/activate
             pip install pytest
             . venv/bin/activate
             py.test tests
