@@ -1,6 +1,9 @@
 .vscode
+
 dist/
 venv/
+
 mrpeace.egg-info/
-mrpeace/__pycache__
-mrpeace/commands/__pycache__
+
+__pycache__
+*.pyc

@@ -18,7 +18,7 @@ classifiers = [
 
 setup(
     name="mrpeace",
-    version="1.1.3",
+    version="1.1.4",
     description="Basic Cli",
     url="https://github.com/claudiolau/MrPeace",
     packages=find_packages(),
