@@ -1,6 +1,8 @@
 # MrPeace
 
+[![Python](https://img.shields.io/badge/Python-3.7%20%7C%203.8%20%7C%203.9-blue)](https://badge.fury.io/py/mrpeace)
 [![PyPI version](https://badge.fury.io/py/mrpeace.svg)](https://badge.fury.io/py/mrpeace)
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 
 <b> MrPeace </b> is a peaceful command line interface for peacing out when time is limited.
 
